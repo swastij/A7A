@@ -12,7 +12,7 @@ export default {
 
 <style>
 .arrow{
-    margin-top:271px;
+  
     text-align: center;
 }
 </style>
