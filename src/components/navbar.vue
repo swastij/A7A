@@ -2,9 +2,8 @@
   <div class="navbar-box">
     <div class="nav-row">
       <div class="left-item">
-       
-          <img src="../assets/svg/A7A.svg" />
-          <!-- <p>CREATE.INSPIRE.</p> -->
+        <img src="../assets/svg/A7A.svg" />
+        <!-- <p>CREATE.INSPIRE.</p> -->
       </div>
       <div class="right-item">
         <p>HOME</p>
@@ -47,7 +46,7 @@ export default {};
   width: 60%;
   height: 100%;
 }
-.left-item  > img {
+.left-item > img {
   height: 60%;
 }
 .right-item {

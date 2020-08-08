@@ -35,8 +35,8 @@ export default {
     feature,
     loremipsum,
     jointhemovement,
-    foot
-  }
+    foot,
+  },
 };
 </script>
 <style>

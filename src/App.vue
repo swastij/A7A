@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <Home/>
+    <Home />
   </div>
 </template>
 
 <script>
 import Home from "./views/Home.vue";
 export default {
-  components:{
+  components: {
     Home,
   },
 };
 </script>
 
 <style>
-#app{
+#app {
   width: 100%;
   height: 100%;
 }
@@ -25,15 +25,16 @@ export default {
 }
 @font-face {
   font-family: "Muli-Light";
-  src: local("Muli-Light"), url(./assets/fonts/Muli-Light.ttf) format("truetype");
+  src: local("Muli-Light"),
+    url(./assets/fonts/Muli-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Muli-Italic";
-  src: local("Muli-Italic"), url(./assets/fonts/Muli-Italic.ttf) format("truetype");
+  src: local("Muli-Italic"),
+    url(./assets/fonts/Muli-Italic.ttf) format("truetype");
 }
 
 body {
   font-family: Muli-Light;
 }
-
 </style>

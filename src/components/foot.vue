@@ -1,36 +1,36 @@
 <template>
   <div class="footer-container">
     <div class="footer-row">
-    <div class="left-footer">
-      <img src="../assets/svg/A7A.svg" />
-      <p>
-        Outa voluptate et optio. Eos quasi impedit sapiente aliquid eius
-        eligendi at. Necessitatibus magni et sed quod quas minima.
-      </p>
-    </div>
-    <div class="right-footer">
-      <div class="right-footer-box">
-        <h3>Company</h3>
-        <p>About us</p>
-        <p>Jobs</p>
-        <p>Contact</p>
-        <p>Media</p>
+      <div class="left-footer">
+        <img src="../assets/svg/A7A.svg" />
+        <p>
+          Outa voluptate et optio. Eos quasi impedit sapiente aliquid eius
+          eligendi at. Necessitatibus magni et sed quod quas minima.
+        </p>
       </div>
-      <div class="right-footer-box">
-        <h3>Product</h3>
-        <p>About us</p>
-        <p>Jobs</p>
-        <p>Contact</p>
-        <p>Media</p>
+      <div class="right-footer">
+        <div class="right-footer-box">
+          <h3>Company</h3>
+          <p>About us</p>
+          <p>Jobs</p>
+          <p>Contact</p>
+          <p>Media</p>
+        </div>
+        <div class="right-footer-box">
+          <h3>Product</h3>
+          <p>About us</p>
+          <p>Jobs</p>
+          <p>Contact</p>
+          <p>Media</p>
+        </div>
+        <div class="right-footer-box">
+          <h3>Support</h3>
+          <p>About us</p>
+          <p>Jobs</p>
+          <p>Contact</p>
+          <p>Media</p>
+        </div>
       </div>
-      <div class="right-footer-box">
-        <h3>Support</h3>
-        <p>About us</p>
-        <p>Jobs</p>
-        <p>Contact</p>
-        <p>Media</p>
-      </div>
-    </div>
     </div>
   </div>
 </template>
