@@ -54,7 +54,7 @@ export default {};
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 80%;
+  max-width: 85%;
   margin: auto;
 }
 .left-footer {

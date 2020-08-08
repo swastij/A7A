@@ -2,7 +2,9 @@
   <div class="navbar-box">
     <div class="nav-row">
       <div class="left-item">
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <div
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center"
+        >
           <img src="../assets/svg/A7A.svg" />
           <p>CREATE.INSPIRE.</p>
         </div>
@@ -28,14 +30,13 @@ export default {};
   left: 0;
   width: 100%;
   height: 74px;
-  filter: drop-shadow(2px);
-  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px) opacity(0.4);
   box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 10;
   color: #dfdfdf;
 }
 .nav-row {
-  max-width: 80%;
+  max-width: 85%;
   display: flex;
   justify-content: space-between;
   margin: auto;
