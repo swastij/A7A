@@ -1,5 +1,6 @@
 <template>
   <div class="footer-container">
+    <div class="footer-row">
     <div class="left-footer">
       <img src="../assets/svg/A7A.svg" />
       <p>
@@ -30,6 +31,7 @@
         <p>Media</p>
       </div>
     </div>
+    </div>
   </div>
 </template>
 
@@ -41,16 +43,19 @@ export default {};
 .footer-container {
   position: absolute;
   left: 0;
-  margin-top:273px;
-  padding:1.5%;
+  margin-top: 273px;
+  padding: 1.5%;
   box-sizing: border-box;
-  /* bottom: 0; */
   width: 100%;
-  max-width:100%;
+  max-width: 100%;
+  background: #1c1c1c;
+}
+.footer-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #1c1c1c;
+  max-width: 80%;
+  margin: auto;
 }
 .left-footer {
   width: 40%;
@@ -60,8 +65,8 @@ export default {};
   line-height: 32px;
   color: #dfdfdf;
 }
-.left-footer >img{
-  width:50%;
+.left-footer > img {
+  width: 50%;
   margin-bottom: 5%;
 }
 .right-footer {
@@ -76,21 +81,20 @@ export default {};
 }
 .right-footer-box > h3 {
   font-style: normal;
-font-weight: normal;
-font-size: 33px;
-line-height: 41px;
-text-align: center;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 41px;
+  text-align: center;
 
-color: #DFDFDF;
-
+  color: #dfdfdf;
 }
-.right-footer-box >p{
+.right-footer-box > p {
   font-style: normal;
-font-weight: normal;
-font-size: 26px;
-line-height: 33px;
-text-align: center;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
 
-color: rgba(223, 223, 223, 0.5);
+  color: rgba(223, 223, 223, 0.5);
 }
 </style>

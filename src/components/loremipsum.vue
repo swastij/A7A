@@ -1,19 +1,21 @@
 <template>
   <div class="li-container">
-    <img src="../assets/svg/loremipsum.svg" />
-    <div class="li-arrow-text">
-      <div class="left-circle-box">
-        <div class="arrow-circle">
-          <img src="../assets/svg/leftarrow.svg" />
+    <div class="li-container-relative">
+      <img src="../assets/svg/loremipsum.svg" />
+      <div class="li-arrow-text">
+        <div class="left-circle-box">
+          <div class="arrow-circle">
+            <img src="../assets/svg/leftarrow.svg" />
+          </div>
         </div>
-      </div>
-      <div class="text">
-        <p>Lorem ipsum</p>
-        <p>Row Row Row your boat gently down the stream</p>
-      </div>
-      <div class="right-circle-box">
-        <div class="arrow-circle">
-          <img src="../assets/svg/rightarrow.svg" />
+        <div class="text">
+          <p>Lorem ipsum</p>
+          <p>Row Row Row your boat gently down the stream</p>
+        </div>
+        <div class="right-circle-box">
+          <div class="arrow-circle">
+            <img src="../assets/svg/rightarrow.svg" />
+          </div>
         </div>
       </div>
     </div>
@@ -28,14 +30,19 @@ export default {};
 .li-container {
   position: absolute;
   left: 0;
-  text-align:center;
-  margin-top: 145px;
+  text-align: center;
+  margin-top: 505px;
   width: 100%;
   max-width: 100%;
 }
-.li-container > img {
+.li-container-relative {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.li-container-relative > img {
   width: 100%;
-  max-width: 100%;
+  position: absolute;
   left: 0;
 }
 .li-arrow-text {
@@ -46,21 +53,21 @@ export default {};
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: -430px;
+  position: absolute;
 }
 .left-circle-box {
   width: 10%;
   max-width: 10%;
 }
-.right-circle-box{
-    width: 10%;
+.right-circle-box {
+  width: 10%;
   max-width: 10%;
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 }
 .arrow-circle {
   height: 80px;
-  width:80px;
+  width: 80px;
   /* max-width: 10%; */
   display: flex;
   justify-content: center;

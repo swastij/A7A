@@ -26,7 +26,7 @@ border-radius: 20px;
 display:flex;
 justify-content: space-around;
 align-items: center;
-margin-top:896px;
+margin-top:1096px;
 box-sizing: border-box;
 padding: 2% 0%;
 }
