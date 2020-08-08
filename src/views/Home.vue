@@ -41,8 +41,8 @@ export default {
 </script>
 <style>
 .home {
-  width: 85%;
-  max-width: 85%;
+  width: 87%;
+  max-width: 87%;
   padding: 2%;
   height: 100%;
   margin: auto;

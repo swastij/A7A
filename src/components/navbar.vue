@@ -2,12 +2,9 @@
   <div class="navbar-box">
     <div class="nav-row">
       <div class="left-item">
-        <div
-          style="display: flex; flex-direction: column; align-items: center; justify-content: center"
-        >
+       
           <img src="../assets/svg/A7A.svg" />
-          <p>CREATE.INSPIRE.</p>
-        </div>
+          <!-- <p>CREATE.INSPIRE.</p> -->
       </div>
       <div class="right-item">
         <p>HOME</p>
@@ -50,8 +47,8 @@ export default {};
   width: 60%;
   height: 100%;
 }
-.left-item > div > img {
-  height: 25%;
+.left-item  > img {
+  height: 60%;
 }
 .right-item {
   display: flex;
