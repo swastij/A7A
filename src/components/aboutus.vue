@@ -14,7 +14,9 @@
         time. Today's software, ready for tomorrow's technology.
       </p>
     </div>
-    <div class="image"></div>
+    <div class="image">
+      <img src="" >
+    </div>
   </div>
 </template>
 
@@ -53,5 +55,49 @@ export default {};
 }
 .image {
   width: 50%;
+  background: palevioletred;
+}
+@media screen and (max-width: 786px) {
+
+  .aboutus-box{
+    margin-top: 120px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .aboutus-text{
+    order:2;
+  }
+  .image{
+    order:1;
+  }
+  .aboutus-text{
+    width:100%;
+  }
+  .image{
+    width: 100%;
+  }
+  .aboutus-text > h3 {
+    font-size: 69px;
+  }
+  .aboutus-text > p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+}
+@media screen and (max-width: 576px) {
+  .aboutus-box{
+    margin-top: 90px;
+  }
+  
+  .aboutus-text > h3 {
+    font-size: 39px;
+  }
+  .aboutus-text > p {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 </style>

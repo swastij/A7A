@@ -9,7 +9,9 @@
     </div>
     <div class="right">
       <input type="text" placeholder="Email Address" />
-      <button>Get Started</button>
+      <div>
+        <p>Get Started</p>
+      </div>
     </div>
   </div>
 </template>
@@ -53,6 +55,7 @@ export default {};
   width: 40%;
   max-width: 40%;
   height: 48px;
+  display: flex;
 }
 .right > input {
   width: 70%;
@@ -68,7 +71,7 @@ export default {};
   box-sizing: border-box;
   padding: 0% 2%;
 }
-.right > button {
+.right > div {
   height: 100%;
   width: 30%;
   max-width: 30%;
@@ -81,6 +84,42 @@ export default {};
   color: #dfdfdf;
   background: #5c4ccc;
   border-radius: 0px 10px 10px 0px;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 786px) {
+  .jtm-container {
+    margin-top: 598px;
+    flex-wrap: wrap;
+  }
+  .left {
+    width: 100%;
+    max-width: 100%;
+    margin: 2%;
+  }
+  .right {
+    width: 100%;
+    max-width: 100%;
+    margin: 2%;
+  }
+  .left > p:nth-child(1) {
+    font-size: 39px;
+    line-height: 51px;
+  }
+  .left > p:nth-child(2) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+.left > p:nth-child(1) {
+    font-size: 28px;
+    line-height: 41px;
+  }
+  .left > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 </style>

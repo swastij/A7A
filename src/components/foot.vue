@@ -23,7 +23,7 @@
           <p>Contact</p>
           <p>Media</p>
         </div>
-        <div class="right-footer-box">
+        <div class="right-footer-box bottom">
           <h3>Support</h3>
           <p>About us</p>
           <p>Jobs</p>
@@ -96,5 +96,45 @@ export default {};
   text-align: center;
 
   color: rgba(223, 223, 223, 0.5);
+}
+@media screen and (max-width: 786px) {
+  .left-footer {
+    display: none;
+    width: 0;
+  }
+  .right-footer {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .right-footer-box {
+    width: 50%;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .right-footer-box > h3 {
+    font-size: 24px;
+    line-height: 31px;
+     text-align: left !important;
+  }
+  .right-footer-box > p {
+    font-size: 20px;
+    line-height: 30px;
+     text-align: left !important;
+  }
+  .bottom{
+    width: 100% !important;
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .right-footer-box > h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .right-footer-box > p {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
 </style>

@@ -6,9 +6,7 @@
       </div>
       <p>Feature 1</p>
       <p>
-        WE DESIGN AND DEVELOP WEBSITES, WEB SHOPS, MOBILE APPS, DIGITAL
-        CAMPAIGNS, SYSTEM INTEGRATIONS AND CUSTOMIZED SOFTWARE OF THE HIGHEST
-        LEVEL.
+        we design and develop websites, webshops, mobile apps, digital campaigns, system integrations and customized software of the highest level.
       </p>
       <div class="read-more">Read More</div>
     </div>
@@ -18,9 +16,7 @@
       </div>
       <p>Feature 2</p>
       <p>
-        WE DESIGN AND DEVELOP WEBSITES, WEB SHOPS, MOBILE APPS, DIGITAL
-        CAMPAIGNS, SYSTEM INTEGRATIONS AND CUSTOMIZED SOFTWARE OF THE HIGHEST
-        LEVEL.
+        we design and develop websites, webshops, mobile apps, digital campaigns, system integrations and customized software of the highest level.
       </p>
       <div class="read-more">Read More</div>
     </div>
@@ -30,9 +26,7 @@
       </div>
       <p>Feature 3</p>
       <p>
-        WE DESIGN AND DEVELOP WEBSITES, WEB SHOPS, MOBILE APPS, DIGITAL
-        CAMPAIGNS, SYSTEM INTEGRATIONS AND CUSTOMIZED SOFTWARE OF THE HIGHEST
-        LEVEL.
+        we design and develop websites, webshops, mobile apps, digital campaigns, system integrations and customized software of the highest level.
       </p>
       <div class="read-more">Read More</div>
     </div>
@@ -75,7 +69,7 @@ export default {};
   font-weight: normal;
   font-size: 28px;
   line-height: 33px;
-
+  text-transform: uppercase;
   color: #dfdfdf;
 }
 .read-more {
@@ -93,5 +87,37 @@ export default {};
   color: #cdcdcd;
   max-width: 40%;
   width: 40%;
+}
+@media screen and (max-width:786px) {
+  .feature-box-container{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .feature-box{
+    width: 100%;
+    max-width: 100%;
+    margin: 2%;
+  }
+  .feature-box > p:nth-of-type(odd) {
+  font-size: 28px;
+  line-height: 36px;
+  }
+  .feature-box > p:nth-of-type(even) {
+   font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+
+  }
+}
+@media screen and (max-width:576px) {
+.feature-box > p:nth-of-type(odd) {
+  font-size: 20px;
+  line-height: 28px;
+  }
+  .feature-box > p:nth-of-type(even) {
+   font-size: 14px;
+  line-height: 20px;
+  }
 }
 </style>

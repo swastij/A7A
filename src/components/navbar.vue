@@ -57,4 +57,12 @@ export default {};
   width: 40%;
   height: 100%;
 }
+@media screen and (max-width: 786px){
+  .left-item{
+    width: 30%;
+  }
+  .right-item{
+    width:70%;
+  }
+}
 </style>

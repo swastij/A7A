@@ -96,4 +96,43 @@ export default {};
   line-height: 44px;
   text-align: center;
 }
+@media screen and (max-width:786px) {
+  .li-container{
+    margin-top:300px;
+  }
+.text > p:nth-child(1) {
+  font-size: 80px;
+  line-height: 122px;
+}
+.text > p:nth-child(2) {
+  font-size: 24px;
+  line-height: 34px;
+}
+.left-circle-box {
+  width: 10%;
+  max-width: 10%;
+}
+.right-circle-box {
+  width: 10%;
+  max-width: 10%;
+}
+.arrow-circle{
+  height: 60px;
+  width: 60px;
+}
+}
+@media screen and (max-width:576px) {
+.text > p:nth-child(1) {
+  font-size: 58px;
+  line-height: 108px;
+}
+.text > p:nth-child(2) {
+  font-size: 20px;
+  line-height: 28px;
+}
+.arrow-circle{
+  height: 40px;
+  width: 40px;
+}
+}
 </style>
