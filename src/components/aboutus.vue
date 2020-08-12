@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="image">
-      <img src="" >
+      <img src="https://i.pinimg.com/originals/e8/4b/ab/e84babd42e49b0c879536315d30788ed.gif" >
     </div>
   </div>
 </template>
@@ -55,7 +55,8 @@ export default {};
 }
 .image {
   width: 50%;
-  background: palevioletred;
+  display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 786px) {
 

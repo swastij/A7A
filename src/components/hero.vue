@@ -5,7 +5,7 @@
       <p>CREATE. INSPIRE.</p>
     </div>
     <div class="hero-image">
-      <img src="" >
+      <img src="https://64.media.tumblr.com/d106208fa90288473bdd3e68d2d0672c/tumblr_opmbvl4qwR1tjryj4o1_540.gifv" >
     </div>
   </div>
 </template>
@@ -32,9 +32,14 @@ export default {};
   color: #dfdfdf;
 }
 .hero-image{
-  background:grey;
+  display: flex;
+  justify-content: flex-end;
   width:50%;
   height: 80%;
+}
+.hero-image > img{
+ 
+  height: 600px;
 }
 @media screen and (max-width: 786px) {
   .hero-box{
