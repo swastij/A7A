@@ -70,10 +70,19 @@ export default {
 .nav-drawer {
   height: 100vh;
   width: 100%;
-  background-color: red;
+  background-color: #040404;
   margin-top: 75px;
   position: fixed;
   left: 0;
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+}
+.nav-drawer >p {
+  font-size: 44px;
+  margin-bottom: 5%;
 }
 .nav-row {
   max-width: 87%;
@@ -149,5 +158,9 @@ export default {
   .nav-row {
     max-width: 98%;
   }
+  .nav-drawer >p {
+  font-size: 24px;
+  margin-bottom:15%;
+}
 }
 </style>

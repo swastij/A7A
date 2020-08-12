@@ -9,8 +9,8 @@
           </div>
         </div>
         <div class="text">
-          <p>{{infoTitle[currentImgIndex]}}</p>
-          <p>{{infoDesc[currentImgIndex]}}</p>
+          <p>{{ infoTitle[currentImgIndex] }}</p>
+          <p>{{ infoDesc[currentImgIndex] }}</p>
         </div>
         <div class="right-circle-box">
           <div @click="nextSlide" class="arrow-circle">
@@ -32,16 +32,8 @@ export default {
         "https://images.unsplash.com/photo-1597120052732-c050b3e4022d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         "https://images.unsplash.com/photo-1596970591500-15283f28cc5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
       ],
-      infoTitle: [
-        'ABC',
-        'DEF',
-        'GHI'
-      ],
-      infoDesc: [
-        'abc',
-        'def',
-        'ghi'
-      ]
+      infoTitle: ["ABC", "DEF", "GHI"],
+      infoDesc: ["abc", "def", "ghi"],
     };
   },
   methods: {
