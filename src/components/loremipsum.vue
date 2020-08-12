@@ -73,6 +73,7 @@ export default {
   width: 100%;
   position: absolute;
   left: 0;
+  height: 90vh;
 }
 .li-arrow-text {
   width: 100%;

@@ -7,6 +7,7 @@
     <takeaction />
     <feature />
     <loremipsum />
+    <reviews/>
     <jointhemovement />
     <foot />
   </div>
@@ -23,6 +24,7 @@ import feature from "../components/feature.vue";
 import loremipsum from "../components/loremipsum.vue";
 import jointhemovement from "../components/jointhemovement.vue";
 import foot from "../components/foot.vue";
+import reviews from "../components/reviews.vue"
 
 export default {
   name: "Home",
@@ -36,6 +38,7 @@ export default {
     loremipsum,
     jointhemovement,
     foot,
+    reviews
   },
 };
 </script>

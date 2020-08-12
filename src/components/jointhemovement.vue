@@ -29,7 +29,7 @@ export default {};
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1096px;
+  margin-top: 145px;
   box-sizing: border-box;
   padding: 2% 0%;
 }
