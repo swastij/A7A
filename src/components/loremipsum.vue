@@ -1,7 +1,7 @@
 <template>
   <div class="li-container">
     <div class="li-container-relative">
-      <img :src="images[currentImgIndex]" />
+      <img ref="bannerImg" :src="images[currentImgIndex]" />
       <div class="li-arrow-text">
         <div class="left-circle-box">
           <div @click="prevSlide" class="arrow-circle">
@@ -37,19 +37,30 @@ export default {
     };
   },
   methods: {
-    nextSlide() {
+    sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    },
+    async nextSlide() {
+      this.$refs.bannerImg.style.transform = "scale(0)";
+      await this.sleep(200);
       if (this.currentImgIndex < this.images.length - 1) {
         this.currentImgIndex++;
       } else {
         this.currentImgIndex = 0;
       }
+      await this.sleep(200);
+      this.$refs.bannerImg.style.transform = "scale(1)";
     },
-    prevSlide() {
+    async prevSlide() {
+      this.$refs.bannerImg.style.transform = "scale(0)";
+      await this.sleep(200);
       if (this.currentImgIndex > 0) {
         this.currentImgIndex--;
       } else if (this.currentImgIndex == 0) {
         this.currentImgIndex = this.images.length - 1;
       }
+      await this.sleep(200);
+      this.$refs.bannerImg.style.transform = "scale(1)";
     },
   },
 };
@@ -74,6 +85,7 @@ export default {
   position: absolute;
   left: 0;
   height: 90vh;
+  transition: 0.4s;
 }
 .li-arrow-text {
   width: 100%;

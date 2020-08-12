@@ -156,7 +156,7 @@ export default {
     display: flex !important;
   }
   .nav-row {
-    max-width: 98%;
+    max-width: 90%;
   }
   .nav-drawer >p {
   font-size: 24px;
