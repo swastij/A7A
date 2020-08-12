@@ -1,5 +1,11 @@
 <template>
   <div class="navbar-box">
+    <div v-if="isDrawerVisible" class="nav-drawer">
+      <p>HOME</p>
+      <p>ABOUT</p>
+      <P>PRODUCTS</P>
+      <P>CONTACT</P>
+    </div>
     <div class="nav-row">
       <div class="left-item">
         <img src="../assets/svg/A7A.svg" />
@@ -11,12 +17,42 @@
         <P>PRODUCTS</P>
         <P>CONTACT</P>
       </div>
+      <div class="mobile">
+        <div @click="toggleNavdrawer">
+          <div ref="hamOne"></div>
+          <div ref="hamTwo"></div>
+          <div ref="hamThree"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isDrawerVisible: false,
+    };
+  },
+  methods: {
+    toggleNavdrawer() {
+      this.isDrawerVisible = !this.isDrawerVisible;
+      if (this.isDrawerVisible) {
+        this.$refs.hamTwo.style.display = "none";
+        this.$refs.hamOne.style.transform = "rotateZ(45deg)";
+        this.$refs.hamThree.style.transform = "rotateZ(-45deg)";
+        this.$refs.hamOne.style.transformOrigin = '50% -100%'
+        this.$refs.hamThree.style.transformOrigin = '10% 10%'
+
+      } else {
+        this.$refs.hamTwo.style.display = "block";
+        this.$refs.hamOne.style.transform = "rotateZ(0deg)";
+        this.$refs.hamThree.style.transform = "rotateZ(0deg)";
+      }
+    },
+  },
+};
 </script>
 
 <style>
@@ -31,8 +67,16 @@ export default {};
   z-index: 10;
   color: #dfdfdf;
 }
+.nav-drawer {
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  margin-top: 75px;
+  position: fixed;
+  left: 0;
+}
 .nav-row {
-  max-width: 85%;
+  max-width: 87%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -52,17 +96,58 @@ export default {};
 .right-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 40%;
   height: 100%;
+  transition: 0.4s;
 }
-@media screen and (max-width: 786px){
-  .left-item{
+.mobile {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  transition: 0.4s;
+  display: none;
+}
+
+.mobile > div > div {
+  height: 2px;
+  width: 30px;
+  background-color: azure;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: .4s;
+}
+
+/* .ham-three {
+  transform: rotateZ(-45deg);
+}
+
+.ham-one {
+  transform: rotateZ(-45deg);
+} */
+
+@media screen and (max-width: 890px) {
+  .left-item {
     width: 30%;
   }
-  .right-item{
-    width:70%;
+  .right-item {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .right-item {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex !important;
+  }
+  .nav-row {
+    max-width: 98%;
   }
 }
 </style>
