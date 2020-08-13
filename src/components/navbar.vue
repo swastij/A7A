@@ -120,6 +120,9 @@ export default {
   transition: 0.4s;
   display: none;
 }
+.mobile > div{
+  cursor: pointer;
+}
 
 .mobile > div > div {
   height: 2px;

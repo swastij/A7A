@@ -69,13 +69,16 @@ export default {};
   font-weight: normal;
   font-size: 28px;
   line-height: 33px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #dfdfdf;
 }
 .read-more {
   background: #222222;
   border: 1px solid #333333;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   margin: 4% 4% 4% 0%;
   padding: 2%;
@@ -85,8 +88,13 @@ export default {};
   line-height: 21px;
   text-align: center;
   color: #cdcdcd;
-  max-width: 40%;
-  width: 40%;
+  max-width: 60%;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px){
+  .read-more{
+    max-width:80%;
+  }
 }
 @media screen and (max-width:786px) {
   .feature-box-container{
@@ -107,7 +115,9 @@ export default {};
    font-size: 20px;
   line-height: 28px;
   text-transform: capitalize;
-
+  }
+  .read-more{
+    max-width:30%;
   }
 }
 @media screen and (max-width:576px) {

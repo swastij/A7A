@@ -58,6 +58,9 @@ export default {};
   display: flex;
   justify-content: flex-end;
 }
+.image > img{
+    width:80%;
+  }
 @media screen and (max-width: 786px) {
 
   .aboutus-box{
@@ -72,15 +75,19 @@ export default {};
   }
   .image{
     order:1;
+    width: 100%;
+    justify-content: center;
+  }
+  .image > img{
+    width:50%;
   }
   .aboutus-text{
     width:100%;
   }
-  .image{
-    width: 100%;
-  }
+  
   .aboutus-text > h3 {
     font-size: 69px;
+    text-align: center;
   }
   .aboutus-text > p {
     font-size: 24px;
@@ -95,10 +102,15 @@ export default {};
   
   .aboutus-text > h3 {
     font-size: 39px;
+    text-align: center;
+
   }
   .aboutus-text > p {
     font-size: 14px;
     line-height: 25px;
+  }
+  .image > img{
+    width:40%;
   }
 }
 </style>

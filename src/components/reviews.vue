@@ -1,11 +1,26 @@
 <template>
   <div class="review-container">
     <div ref="reviewRow" class="review-row">
+      <div class="review-item-container">
       <div class="review-item" v-for="(review, key) in reviews" :key="key">
         <div>
           {{ key }}
         </div>
+        
+        <div class="inverted-comma">
+          "
+        </div>
+        <div class="review-text"> {{review.review}}
+        <div>
+          <div class="review-pic">
+           <img src={review.pic}>
+          </div>
+          <div class="review-name">{{review.name}}</div>
+          <div class="review-about">{{review.about}}</div>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
     <div class="review-dots-container">
       <div
@@ -16,6 +31,7 @@
       ></div>
     </div>
   </div>
+ 
 </template>
 
 <script>
@@ -27,7 +43,7 @@ export default {
           name: "Test",
           review: "review",
           about: "about",
-          pic: "pic",
+          pic: "../assets/svg/reviewpic.svg"
         },
         {
           name: "Test",
@@ -120,6 +136,7 @@ export default {
   margin-left: 2px;
   margin-right: 2px;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .review-dot-active {
@@ -130,5 +147,66 @@ export default {
   margin-left: 2px;
   margin-right: 2px;
   transition: 0.4s;
+}
+.review-item-container{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.inverted-comma{
+  font-family: Muli;
+font-style: italic;
+font-weight: normal;
+font-size: 46px;
+line-height: 108px;
+color: #DFDFDF;
+width: 100%;
+}
+
+.review-text{
+  ont-family: Muli;
+font-style: italic;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+width: 100%;
+height:20%;
+color: #DFDFDF;
+}
+.review-pic{
+border: 1px solid rgba(223, 223, 223, 0.5);
+box-sizing: border-box;
+
+}
+.review-name{
+ont-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+
+color: #DFDFDF;
+
+}
+.review-about{
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 14px;
+
+color: rgba(223, 223, 223, 0.5);
+
+}
+@media screen and (max-width:786px){
+  .review-container{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .review-item{
+    width:100%;
+  }
+}
+@media screen and (max-width: 576px){
+  
 }
 </style>

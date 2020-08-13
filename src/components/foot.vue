@@ -85,7 +85,6 @@ export default {};
   font-size: 33px;
   line-height: 41px;
   text-align: center;
-
   color: #dfdfdf;
 }
 .right-footer-box > p {
@@ -94,7 +93,7 @@ export default {};
   font-size: 26px;
   line-height: 33px;
   text-align: center;
-
+  cursor: pointer;
   color: rgba(223, 223, 223, 0.5);
 }
 @media screen and (max-width: 786px) {
@@ -115,14 +114,14 @@ export default {};
   .right-footer-box > h3 {
     font-size: 24px;
     line-height: 31px;
-     text-align: left !important;
+    text-align: left !important;
   }
   .right-footer-box > p {
     font-size: 20px;
     line-height: 30px;
-     text-align: left !important;
+    text-align: left !important;
   }
-  .bottom{
+  .bottom {
     width: 100% !important;
     margin-top: 16px;
   }

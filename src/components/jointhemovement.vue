@@ -87,6 +87,7 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 786px) {
   .jtm-container {

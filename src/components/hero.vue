@@ -24,6 +24,7 @@ export default {};
 }
 .a7a {
   width: 50%;
+  max-width: 50%;
   font-style: normal;
   font-weight: normal;
   font-size: 44px;
@@ -35,16 +36,20 @@ export default {};
   display: flex;
   justify-content: flex-end;
   width:50%;
-  height: 80%;
 }
 .hero-image > img{
- 
-  height: 600px;
+ width:80%;
+  /* height: 60%; */
 }
+/* @media screen and (max-width:1072px){
+  .hero-box{
+    width:50%;
+  } */
+/* } */
 @media screen and (max-width: 786px) {
   .hero-box{
     height:auto;
-    margin-top:75px;
+    margin-top:65px;
     flex-wrap:wrap;
     align-items: center;
     justify-content: space-around;
@@ -55,8 +60,13 @@ export default {};
     order: 2;
   }
   .hero-image{
+    justify-content: center;
     width: 100%;
     order: 1;
+    margin-bottom: 5%;
+  }
+  .hero-image > img{
+    width:50%;
   }
     .a7a>img{
          width:50%; 
