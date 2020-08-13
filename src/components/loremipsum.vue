@@ -143,7 +143,7 @@ export default {
 }
 @media screen and (max-width: 786px) {
   .li-container {
-    margin-top: 300px;
+    margin-top: 480px;
   }
   .text > p:nth-child(1) {
     font-size: 80px;
@@ -167,6 +167,16 @@ export default {
   }
 }
 @media screen and (max-width: 576px) {
+    .li-container {
+    margin-top: 320px;
+  }
+  .li-container-relative > img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 50vh;
+    transition: 0.4s;
+  }
   .text > p:nth-child(1) {
     font-size: 58px;
     line-height: 108px;

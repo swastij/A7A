@@ -91,7 +91,7 @@ export default {};
 }
 @media screen and (max-width: 786px) {
   .jtm-container {
-    margin-top: 598px;
+    margin-top: 248px;
     flex-wrap: wrap;
   }
   .left {

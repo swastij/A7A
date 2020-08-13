@@ -125,6 +125,9 @@ export default {};
     width: 100% !important;
     margin-top: 16px;
   }
+  .footer-container {
+    margin-top: 140px;
+  }
 }
 @media screen and (max-width: 576px) {
   .right-footer-box > h3 {

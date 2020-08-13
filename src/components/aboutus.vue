@@ -59,7 +59,7 @@ export default {};
   justify-content: flex-end;
 }
 .image > img{
-    width:80%;
+    width:100%;
   }
 @media screen and (max-width: 786px) {
 
@@ -79,7 +79,7 @@ export default {};
     justify-content: center;
   }
   .image > img{
-    width:50%;
+    width:80%;
   }
   .aboutus-text{
     width:100%;
@@ -110,7 +110,7 @@ export default {};
     line-height: 25px;
   }
   .image > img{
-    width:40%;
+    width:100%;
   }
 }
 </style>

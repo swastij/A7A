@@ -117,7 +117,7 @@ export default {};
   text-transform: capitalize;
   }
   .read-more{
-    max-width:30%;
+    max-width:40%;
   }
 }
 @media screen and (max-width:576px) {
@@ -128,6 +128,9 @@ export default {};
   .feature-box > p:nth-of-type(even) {
    font-size: 14px;
   line-height: 20px;
+  }
+   .read-more{
+    max-width:50%;
   }
 }
 </style>

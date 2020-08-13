@@ -2,25 +2,22 @@
   <div class="review-container">
     <div ref="reviewRow" class="review-row">
       <div class="review-item-container">
-      <div class="review-item" v-for="(review, key) in reviews" :key="key">
-        <div>
-          {{ key }}
-        </div>
-        
-        <div class="inverted-comma">
-          "
-        </div>
-        <div class="review-text"> {{review.review}}
-        <div>
-          <div class="review-pic">
-           <img src={review.pic}>
+        <div class="review-item" v-for="(review, key) in reviews" :key="key">
+          <div class="inverted-comma">
+            "
           </div>
-          <div class="review-name">{{review.name}}</div>
-          <div class="review-about">{{review.about}}</div>
+          <div class="review-text">
+            {{ review.review }}
+            <div>
+              <div class="review-pic">
+                <img :src=review.pic />
+              </div>
+              <div class="review-name">{{ review.name }}</div>
+              <div class="review-about">{{ review.about }}</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="review-dots-container">
       <div
@@ -31,7 +28,6 @@
       ></div>
     </div>
   </div>
- 
 </template>
 
 <script>
@@ -43,25 +39,25 @@ export default {
           name: "Test",
           review: "review",
           about: "about",
-          pic: "../assets/svg/reviewpic.svg"
+          pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScwmUDUqzIvcDJGbL4bGaXPxYuBd8qrET1hA&usqp=CAU",
         },
         {
           name: "Test",
           review: "review",
           about: "about",
-          pic: "pic",
+          pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScwmUDUqzIvcDJGbL4bGaXPxYuBd8qrET1hA&usqp=CAU",
         },
         {
           name: "Test",
           review: "review",
           about: "about",
-          pic: "pic",
+          pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScwmUDUqzIvcDJGbL4bGaXPxYuBd8qrET1hA&usqp=CAU",
         },
         {
           name: "Test",
           review: "review",
           about: "about",
-          pic: "pic",
+          pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScwmUDUqzIvcDJGbL4bGaXPxYuBd8qrET1hA&usqp=CAU",
         },
       ],
       activeReview: 0,
@@ -70,6 +66,15 @@ export default {
   },
   methods: {
     scroll(key) {
+      if ((this.activeReview == 0 && key == 0) || this.activeReview == key) {
+        return;
+      }
+      if (key == 0) {
+        this.$refs.reviewRow.scrollLeft -= this.reviews.length + 1 * 680;
+      }
+      if (key == this.reviews.length) {
+        this.$refs.reviewRow.scrollLeft += this.reviews.length * 680;
+      }
       this.activeReview = key;
       if (this.activeReview == this.prevReview) {
         this.$refs.reviewRow.scrollLeft += 666;
@@ -126,6 +131,7 @@ export default {
   justify-content: center;
   width: 100%;
   margin-top: 20px;
+  display: none !important;
 }
 
 .review-dot {
@@ -148,65 +154,72 @@ export default {
   margin-right: 2px;
   transition: 0.4s;
 }
-.review-item-container{
-  display:flex;
-  justify-content: center;
-  align-items: flex-start;
+.review-item-container {
 }
-.inverted-comma{
+.inverted-comma {
   font-family: Muli;
-font-style: italic;
-font-weight: normal;
-font-size: 46px;
-line-height: 108px;
-color: #DFDFDF;
-width: 100%;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 108px;
+  color: #dfdfdf;
+  width: 100%;
 }
 
-.review-text{
+.review-text {
   ont-family: Muli;
-font-style: italic;
-font-weight: normal;
-font-size: 18px;
-line-height: 23px;
-width: 100%;
-height:20%;
-color: #DFDFDF;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  width: 100%;
+  height: 20%;
+  color: #dfdfdf;
 }
-.review-pic{
-border: 1px solid rgba(223, 223, 223, 0.5);
-box-sizing: border-box;
+.review-pic {
+  border: 1px solid rgba(223, 223, 223, 0.5);
+  box-sizing: border-box;
+    border-radius: 50%;
 
+  height: 40px;
+  width: 40px;
 }
-.review-name{
-ont-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
 
-color: #DFDFDF;
-
+.review-pic > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
-.review-about{
-font-family: Muli;
-font-style: normal;
-font-weight: normal;
-font-size: 11px;
-line-height: 14px;
+.review-name {
+  ont-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 
-color: rgba(223, 223, 223, 0.5);
-
+  color: #dfdfdf;
 }
-@media screen and (max-width:786px){
-  .review-container{
-    display:flex;
+.review-about {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: rgba(223, 223, 223, 0.5);
+}
+@media screen and (max-width: 786px) {
+  .review-container {
+    display: flex;
     flex-wrap: wrap;
+    margin-top: 340px !important;
   }
-  .review-item{
-    width:100%;
+  .review-row {
+    margin-top: 370px !important;
+  }
+  .review-item {
+    width: 100%;
   }
 }
-@media screen and (max-width: 576px){
-  
+@media screen and (max-width: 576px) {
 }
 </style>

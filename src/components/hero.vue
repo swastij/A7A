@@ -5,7 +5,9 @@
       <p>CREATE. INSPIRE.</p>
     </div>
     <div class="hero-image">
-      <img src="https://64.media.tumblr.com/d106208fa90288473bdd3e68d2d0672c/tumblr_opmbvl4qwR1tjryj4o1_540.gifv" >
+      <img
+        src="https://64.media.tumblr.com/d106208fa90288473bdd3e68d2d0672c/tumblr_opmbvl4qwR1tjryj4o1_540.gifv"
+      />
     </div>
   </div>
 </template>
@@ -32,13 +34,13 @@ export default {};
 
   color: #dfdfdf;
 }
-.hero-image{
+.hero-image {
   display: flex;
   justify-content: flex-end;
-  width:50%;
+  width: 50%;
 }
-.hero-image > img{
- width:80%;
+.hero-image > img {
+  width: 100%;
   /* height: 60%; */
 }
 /* @media screen and (max-width:1072px){
@@ -47,40 +49,43 @@ export default {};
   } */
 /* } */
 @media screen and (max-width: 786px) {
-  .hero-box{
-    height:auto;
-    margin-top:65px;
-    flex-wrap:wrap;
+  .hero-box {
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
   }
-  .a7a{
+  .a7a {
     width: 100%;
     text-align: center;
     order: 2;
+    max-width: 100%;
   }
-  .hero-image{
+  .hero-image {
     justify-content: center;
     width: 100%;
     order: 1;
     margin-bottom: 5%;
   }
-  .hero-image > img{
-    width:50%;
+  .hero-image > img {
+    width: 100%;
   }
-    .a7a>img{
-         width:50%; 
-    }
-    .a7a>p{
-        font-size:36px;
-    }
+  .a7a > img {
+    width: 30%;
+  }
+  .a7a > p {
+    font-size: 36px;
+  }
 }
 @media screen and (max-width: 576px) {
-  .a7a>img{
-         width:40%; 
-    }
-    .a7a>p{
-        font-size:24px;
-    }
+  .a7a > img {
+    width: 50%;
+  }
+  .a7a > p {
+    font-size: 24px;
+  }
+
+  .hero-image > img {
+    width: 110%;
+  }
 }
 </style>
