@@ -96,7 +96,7 @@ export default {};
   cursor: pointer;
   color: rgba(223, 223, 223, 0.5);
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 996px) {
   .left-footer {
     display: none;
     width: 0;

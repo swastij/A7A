@@ -62,7 +62,8 @@ export default {
   left: 0;
   width: 100%;
   height: 74px;
-  backdrop-filter: blur(10px) opacity(0.4);
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
   box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 10;
   color: #dfdfdf;

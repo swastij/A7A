@@ -11,7 +11,7 @@ export default {};
 
 <style>
 .take-action {
-  margin-top: 430px;
+  margin-top: 330px;
 }
 .take-action > p:nth-child(1) {
   font-style: normal;

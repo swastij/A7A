@@ -95,6 +95,8 @@ export default {
 .review-container {
   width: 100%;
   margin-top: 1000px;
+  visibility: hidden;
+  display: none !important;
 }
 .review-row {
   width: 100%;

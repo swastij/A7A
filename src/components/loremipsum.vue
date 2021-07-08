@@ -32,8 +32,10 @@ export default {
         "https://images.unsplash.com/photo-1597120052732-c050b3e4022d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         "https://images.unsplash.com/photo-1596970591500-15283f28cc5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
       ],
-      infoTitle: ["ABC", "DEF", "GHI"],
-      infoDesc: ["abc", "def", "ghi"],
+      infoTitle: ["Dedicated Development Team", "Cloud & DevOps", "Custom Software Development"],
+      infoDesc: ["Hire the top minds from A7A Labs to cater to the tailored needs of business and maximize efficiency. Our experienced team of software developers, managers, and architects from India are domain experts who effortlessly step into client's shoes and offer them insightful solutions for any business-critical challenges.", 
+                "Apply automation to conventional business systems to seamlessly manage operations and development processes. We enable businesses to collaborate and accelerate their development cycle that yields high-quality solutions and add value to the business.",
+                "Develop a custom software application in accordance with the changing needs of business and cutting-edge technologies. TatvaSoft helps businesses develop fully functional, feature-rich and compatible web and mobile applications for enterprises to drive growth effectively."],
     };
   },
   methods: {
@@ -128,8 +130,8 @@ export default {
 .text > p:nth-child(1) {
   font-style: normal;
   font-weight: normal;
-  font-size: 153px;
-  line-height: 192px;
+  font-size: 86px;
+  line-height: 92px;
   text-align: center;
   text-shadow: 2px 2px 4px black;
 }
@@ -138,16 +140,17 @@ export default {
   font-weight: bold;
   font-size: 35px;
   line-height: 44px;
+  margin-top: 28px;
   text-align: center;
   text-shadow: 2px 2px 4px black;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1076px) {
   .li-container {
     margin-top: 480px;
   }
   .text > p:nth-child(1) {
-    font-size: 80px;
-    line-height: 122px;
+    font-size: 30px;
+    line-height: 30px;
   }
   .text > p:nth-child(2) {
     font-size: 24px;
@@ -178,16 +181,26 @@ export default {
     transition: 0.4s;
   }
   .text > p:nth-child(1) {
-    font-size: 58px;
-    line-height: 108px;
+    font-size: 28px;
+    line-height: 28px;
   }
   .text > p:nth-child(2) {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .arrow-circle {
     height: 40px;
     width: 40px;
+  }
+}
+@media screen and (max-width: 436px){
+  .text > p:nth-child(1) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .text > p:nth-child(2) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 </style>

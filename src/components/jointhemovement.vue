@@ -29,9 +29,9 @@ export default {};
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 145px;
+  margin-top: 1045px;
   box-sizing: border-box;
-  padding: 2% 0%;
+  padding: 20px;
 }
 .left {
   width: 40%;
@@ -89,9 +89,9 @@ export default {};
   align-items: center;
   cursor: pointer;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 996px) {
   .jtm-container {
-    margin-top: 248px;
+    margin-top: 1045px;
     flex-wrap: wrap;
   }
   .left {
@@ -104,6 +104,12 @@ export default {};
     max-width: 100%;
     margin: 2%;
   }
+  .right > input {
+    width: 100%;
+  }
+  .right > div {
+    width: 100%;
+  }
   .left > p:nth-child(1) {
     font-size: 39px;
     line-height: 51px;
@@ -114,7 +120,11 @@ export default {};
   }
 }
 @media screen and (max-width: 576px) {
-.left > p:nth-child(1) {
+  .jtm-container {
+    margin-top: 645px;
+    flex-wrap: wrap;
+  }
+  .left > p:nth-child(1) {
     font-size: 28px;
     line-height: 41px;
   }
