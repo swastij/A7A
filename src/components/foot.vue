@@ -3,32 +3,12 @@
     <div class="footer-row">
       <div class="left-footer">
         <img src="../assets/svg/A7A.svg" />
-        <p>
-          Outa voluptate et optio. Eos quasi impedit sapiente aliquid eius
-          eligendi at. Necessitatibus magni et sed quod quas minima.
-        </p>
       </div>
       <div class="right-footer">
         <div class="right-footer-box">
-          <h3>Company</h3>
-          <p>About us</p>
-          <p>Jobs</p>
-          <p>Contact</p>
-          <p>Media</p>
-        </div>
-        <div class="right-footer-box">
-          <h3>Product</h3>
-          <p>About us</p>
-          <p>Jobs</p>
-          <p>Contact</p>
-          <p>Media</p>
-        </div>
-        <div class="right-footer-box bottom">
-          <h3>Support</h3>
-          <p>About us</p>
-          <p>Jobs</p>
-          <p>Contact</p>
-          <p>Media</p>
+          <h3>Contact</h3>
+          <p>Email: a7aent@gmail.com</p>
+          <p>Phone: +917015100483</p>
         </div>
       </div>
     </div>
@@ -77,7 +57,7 @@ export default {};
   align-items: center;
 }
 .right-footer-box {
-  width: 30%;
+  width: 100%;
 }
 .right-footer-box > h3 {
   font-style: normal;
